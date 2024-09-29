@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FuncionarioRepository extends JpaRepository <Funcionario, String> {
-    @Override
-    boolean existsById(String cpf);
 }
