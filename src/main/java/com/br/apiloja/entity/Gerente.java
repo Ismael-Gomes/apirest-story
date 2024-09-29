@@ -9,5 +9,9 @@ import lombok.Setter;
 @Setter
 public class Gerente extends Pessoa {
 
+    private String position;
+    private String password;
+    private double salary;
+    private String sector;
 
 }
