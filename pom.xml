@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.br</groupId>
-	<artifactId>apiloja</artifactId>
+	<artifactId>apireststory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>apiloja</name>
 	<description>Projeto de gerenciamento de uma loja</description>
