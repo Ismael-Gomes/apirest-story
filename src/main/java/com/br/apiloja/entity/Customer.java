@@ -8,7 +8,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Cliente extends Pessoa{
+public class Customer extends Person {
 
     @NotBlank(message = "Address is mandatory!")
     private String address;
