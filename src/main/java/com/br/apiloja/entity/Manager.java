@@ -8,7 +8,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Gerente extends Pessoa {
+public class Manager extends Person {
 
     @NotBlank(message = "Position is mandatory!")
     private String position;
