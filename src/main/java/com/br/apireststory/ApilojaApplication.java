@@ -1,4 +1,4 @@
-package com.br.apiloja;
+package com.br.apireststory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
