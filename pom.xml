@@ -11,7 +11,7 @@
 	<groupId>com.br</groupId>
 	<artifactId>apireststory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apiloja</name>
+	<name>apireststory</name>
 	<description>Projeto de gerenciamento de uma loja</description>
 	<url/>
 	<licenses>
