@@ -10,7 +10,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Pessoa {
+public class Person {
 
     @Id
     private String cpf;
