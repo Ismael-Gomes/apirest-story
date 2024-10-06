@@ -5,4 +5,7 @@ public class FunctionaryService {
     @Autowired
     private FunctionaryRepository functionaryRepository;
 
+    public boolean existsCPF(String cpf) {
+        return functionaryRepository.existsById(cpf);
+    }
 }
