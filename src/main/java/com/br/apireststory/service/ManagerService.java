@@ -5,4 +5,7 @@ public class ManagerService {
     @Autowired
     private ManagerRepository managerRepository;
 
+    public boolean existsCPF(String cpf) {
+        return managerRepository.existsById(cpf);
+    }
 }
