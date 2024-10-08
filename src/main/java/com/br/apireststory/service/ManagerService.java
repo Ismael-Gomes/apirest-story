@@ -12,4 +12,8 @@ public class ManagerService {
     public List<Manager> listManagers(){
         return managerRepository.findAll();
     }
+
+    public Manager listManagersByCPF(String cpf){
+        return managerRepository.findById(cpf).orElseThrow(() -> new RuntimeException("Manager not found with this CPF:" + cpf));
+    }
 }
