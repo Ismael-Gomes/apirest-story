@@ -8,4 +8,8 @@ public class FunctionaryService {
     public boolean existsCPF(String cpf) {
         return functionaryRepository.existsById(cpf);
     }
+
+    public List<Functionary> listEmployees(){
+        return functionaryRepository.findAll();
+    }
 }
