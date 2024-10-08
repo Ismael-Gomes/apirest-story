@@ -12,4 +12,8 @@ public class FunctionaryService {
     public List<Functionary> listEmployees(){
         return functionaryRepository.findAll();
     }
+
+    public Functionary listFunctionaryByCPF(String cpf){
+        return functionaryRepository.findById(cpf).orElseThrow(() -> new RuntimeException("Employee not found with this CPF: " + cpf));
+    }
 }
