@@ -8,4 +8,8 @@ public class ManagerService {
     public boolean existsCPF(String cpf) {
         return managerRepository.existsById(cpf);
     }
+
+    public List<Manager> listManagers(){
+        return managerRepository.findAll();
+    }
 }
