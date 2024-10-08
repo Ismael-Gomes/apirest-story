@@ -16,7 +16,6 @@ public class Functionary extends Person {
     @NotBlank(message = "Password is mandatory!")
     private String password;
 
-    @NotBlank(message = "Salary is mandatory!")
     private double salary;
 
 }
