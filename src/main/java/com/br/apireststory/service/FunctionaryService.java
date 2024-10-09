@@ -35,4 +35,8 @@ public class FunctionaryService {
             return Optional.empty();
         }
     }
+
+    public void deleteFunctionaryByCPF(String cpf){
+        functionaryRepository.deleteById(cpf);
+    }
 }
