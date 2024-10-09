@@ -17,6 +17,7 @@ public class CustomerService {
     public Customer listCustomerByCPF(String cpf) {
         return customerRepository.findById(cpf).orElseThrow(() -> new RuntimeException("Customer not found with this CPF: " + cpf));
     }
+
     public Optional<Customer> updateCustomer(String cpf, Customer newData) {
         Optional<Customer> customerExists = customerRepository.findById(cpf);
 
