@@ -16,4 +16,8 @@ public class ManagerService {
     public Manager listManagersByCPF(String cpf){
         return managerRepository.findById(cpf).orElseThrow(() -> new RuntimeException("Manager not found with this CPF:" + cpf));
     }
+
+    public void deleteManagerByCPF(String cpf){
+        managerRepository.deleteById(cpf);
+    }
 }
