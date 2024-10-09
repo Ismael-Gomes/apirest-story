@@ -35,4 +35,8 @@ public class CustomerService {
             return Optional.empty();
         }
     }
+
+    public void deleteCustomerByCPF(String cpf) {
+        customerRepository.deleteById(cpf);
+    }
 }
