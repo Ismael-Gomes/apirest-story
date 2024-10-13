@@ -28,4 +28,12 @@ public class ManagerService {
             return true;
         }
     }
+
+    private boolean validateSalary(Manager manager) {
+        if (manager.getSalary() <= 0) {
+            throw new RuntimeException("Salary is negative");
+        }else{
+            return true;
+        }
+    }
 }
