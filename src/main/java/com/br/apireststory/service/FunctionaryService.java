@@ -47,4 +47,12 @@ public class FunctionaryService {
             return true;
         }
     }
+
+    private boolean validateSalary(Functionary functionary) {
+        if (functionary.getSalary() <= 0){
+            throw new RuntimeException("Salary is negative");
+        }else{
+            return true;
+        }
+    }
 }
