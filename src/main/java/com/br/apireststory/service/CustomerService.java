@@ -47,4 +47,12 @@ public class CustomerService {
             return true;
         }
     }
+
+    private boolean validateSituation(Customer customer) {
+        if (customer.getSituation().equals("Active")){
+            return true;
+        }else {
+            throw new RuntimeException("You can't add someone who is inactive.");
+        }
+    }
 }
