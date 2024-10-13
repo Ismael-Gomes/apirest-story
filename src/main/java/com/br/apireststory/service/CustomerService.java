@@ -39,4 +39,12 @@ public class CustomerService {
     public void deleteCustomerByCPF(String cpf) {
         customerRepository.deleteById(cpf);
     }
+
+    private boolean validateExistsCPF(Customer customer) {
+        if (existsCPF(customer.getCpf())) {
+            throw new RuntimeException("Customer already registered with this CPF.");
+        }else{
+            return true;
+        }
+    }
 }
