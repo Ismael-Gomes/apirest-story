@@ -39,4 +39,12 @@ public class FunctionaryService {
     public void deleteFunctionaryByCPF(String cpf){
         functionaryRepository.deleteById(cpf);
     }
+
+    private boolean validateExistsCPF(Functionary functionary) {
+        if (existsCPF(functionary.getCpf())) {
+            throw new RuntimeException("Employee already registered with this CPF.");
+        }else{
+            return true;
+        }
+    }
 }
