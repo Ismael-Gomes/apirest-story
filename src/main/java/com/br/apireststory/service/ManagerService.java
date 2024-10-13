@@ -20,4 +20,12 @@ public class ManagerService {
     public void deleteManagerByCPF(String cpf){
         managerRepository.deleteById(cpf);
     }
+
+    private boolean validateExistsCPF(Manager manager) {
+        if (existsCPF(manager.getCpf())) {
+            throw new RuntimeException("Employee already registered with this CPF.");
+        }else{
+            return true;
+        }
+    }
 }
